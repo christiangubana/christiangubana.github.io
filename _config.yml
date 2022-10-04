@@ -11,7 +11,7 @@ email: christian1.raymond@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Built with Jekyll
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://christiangubana.com" # the base hostname & protocol for your site
+url: "https://christiangubana.github.io" # the base hostname & protocol for your site
 twitter_username: christiangubana
 github_username:  christiangubana
 linkedin_username: christiangubana
