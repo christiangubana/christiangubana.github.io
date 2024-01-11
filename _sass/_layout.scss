@@ -100,7 +100,9 @@
 .site-footer {
     background-color: $grey-color-light;
     padding: $spacing-unit 0;
-    height: 300px;
+    height: 100px;    
+    margin-top: auto;
+
 }
 
 .footer-heading {
@@ -169,7 +171,7 @@
  * Page content
  */
 .page-content {
-    // padding: $spacing-unit 0;
+ padding: $spacing-unit 0;
 }
 
 .page-heading {
