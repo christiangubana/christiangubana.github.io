@@ -25,6 +25,7 @@ const Skills = () => {
                       return (
                         <Fragment key={i}>
                           <div
+                            style={{ backgroundColor: "white" }}
                             className="icon icon-lg icon-shape shadow-sm rounded-circle m-1"
                             id={skill.skillName.replace(/\s/g, "")}
                           >

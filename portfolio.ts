@@ -34,7 +34,7 @@ export const socialLinks: SocialLinksType = {
 
 export const skillsSection: SkillsSectionType = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "I SPECIALISE IN TECHNOLOGIES THAT INCREASE PROGRAMMER PRODUCTIVITY",
   data: [
     {
       title: "Full Stack Development",
@@ -42,20 +42,24 @@ export const skillsSection: SkillsSectionType = {
       skills: [
         emoji("⚡ Building responsive Single-Page-Apps (SPA) & PWA in React.js"),
         emoji("⚡ Building responsive static websites using Next.js"),
-        emoji("⚡ Building RESTful APIs in Django & Django REST Framework"),
+        emoji("⚡ Building RESTful APIs in Node.js & Express.js REST Framework"),
       ],
       softwareSkills: [
         {
-          skillName: "Python",
-          iconifyTag: "logos:python",
+          skillName: "Nodejs",
+          iconifyTag: "logos:nodejs",
         },
         {
-          skillName: "Django",
-          iconifyTag: "vscode-icons:file-type-django",
+          skillName: "Expressjs",
+          iconifyTag: "logos:express",
         },
         {
           skillName: "JavaScript",
           iconifyTag: "logos:javascript",
+        },
+        {
+          skillName: "TypeScript",
+          iconifyTag: "logos:typescript-icon-round",
         },
         {
           skillName: "Reactjs",
@@ -64,6 +68,14 @@ export const skillsSection: SkillsSectionType = {
         {
           skillName: "Nextjs",
           iconifyTag: "vscode-icons:file-type-light-next",
+        },
+        {
+          skillName: "Tailwindcss",
+          iconifyTag: "logos:tailwindcss",
+        },
+        {
+          skillName: "MUI",
+          iconifyTag: "devicon:materialui",
         },
         {
           skillName: "AWS",
