@@ -24,9 +24,9 @@ const ExperienceCard = ({ companyLogo, company, role, date, desc, descBullets }:
             className="shadow mb-3"
             alt={companyLogo}
           />
-          <CardTitle tag="h4" className="mb-2">
+          {/* <CardTitle tag="h4" className="mb-2">
             {company}
-          </CardTitle>
+          </CardTitle> */}
           <CardSubtitle tag="h5" className="mb-2">
             {role}
           </CardSubtitle>
