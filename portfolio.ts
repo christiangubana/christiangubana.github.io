@@ -133,8 +133,8 @@ export const projects: ProjectType[] = [
   {
     name: "developer-portfolio",
     desc: "Software Developer Portfolio Template built with react.js and next.js bootstrap that helps you showcase your work and skills as a software developer.",
-    github: "https://christiangubana.github.io/",
-    link: "https://christiangubana.github.io/",
+    github: "https://github.com/1hanzla100/developer-portfolio",
+    link: "https://developer-portfolio-1hanzla100.vercel.app/",
   },
   {
     name: "Giebo",
