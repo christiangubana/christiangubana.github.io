@@ -15,7 +15,7 @@ export const greetings: GreetingsType = {
   name: "Christian Ngubana",
   title: "Hi, my name is Christian",
   description:
-    "I'm a passionate software developer with a strong passion for problem solving, I enjoy helping software teams build better software and have happier customers. I care about writing high-quality software that delivers bespoke products and services. My journey in the world of technology began with a relentless curiosity and a commitment to continuous learning.",
+    "I'm a passionate software developer with a strong passion for problem-solving, I enjoy helping software teams build better software and have happier customers. I care about writing high-quality software that delivers bespoke products and services. My journey in the world of technology began with a relentless curiosity and a commitment to continuous learning.",
   resumeLink: "/img/icons/common/pdf/CV-Christian-Ngubana.pdf",
 };
 
