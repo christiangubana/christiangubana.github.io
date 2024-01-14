@@ -130,14 +130,14 @@ export const experience: ExperienceType[] = [
     company: "Platform45",
     companyLogo: "/img/icons/common/platform45.png",
     date: "Nov 2021 - Oct 2022",
-    desc: "Helped my team develop high-quality software. Built beautifully designed digital products for both international and local clients, optimized UI/UX processes, and accessible across a broad range of platforms. Identified areas for modification in existing programs and subsequently developed these modifications, consulted and worked closely with crossfunctional teams to gather requirements.",
+    desc: "Helped my team develop high-quality software. Built beautifully designed digital products for both international and local clients, optimized UI/UX processes, and accessible across a broad range of platforms. Identified areas for modification in existing programs and subsequently developed these modifications, consulted and worked closely with cross-functional teams to gather requirements.",
   },
   {
     role: "Frontend Developer",
     company: "Injozi",
     companyLogo: "/img/icons/common/injozi.jpg",
     date: "Jan 2023 - Dec 2023",
-    desc: "Responsible for turning wireframes and mock-ups into reusable code and building high-quality UI components with high-quality, and scalability. Develop features with web development best practices. Collaborate with teams and stakeholders across the organization to discuss the needs, design, and functionality of the project. Debug errors, troubleshoot issues.",
+    desc: "Responsible for turning wireframes and mock-ups into reusable code and building high-quality UI components with high-quality, and scalability. Develop features with web development best practices. Collaborate with teams and stakeholders across the organization to discuss the needs, design, and functionality of the project. Debug errors, and troubleshoot issues.",
   },
 ];
 
