@@ -143,7 +143,13 @@ export const experience: ExperienceType[] = [
 
 export const projects: ProjectType[] = [
   {
-    name: "developer-portfolio",
+    name: "Birthday Management",
+    desc: "A Birthday Management application that allows capturing the first name and ID number of team members, and then be able to see a list of birthdays in the next 7 days.",
+    github: "https://github.com/christiangubana/birthday-management",
+    link: "https://christiangubana.github.io/birthday-management/",
+  },
+  {
+    name: "Developer-portfolio",
     desc: "Software Developer Portfolio Template built with react.js and next.js bootstrap that helps you showcase your work and skills as a software developer.",
     github: "https://github.com/christiangubana/christiangubana.github.io",
     link: "https://christiangubana.github.io/",
