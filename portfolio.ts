@@ -144,7 +144,7 @@ export const experience: ExperienceType[] = [
 export const projects: ProjectType[] = [
   {
     name: "Birthday Management",
-    desc: "A Birthday Management application that allows capturing the first name and ID number of team members, and then be able to see a list of birthdays in the next 7 days.",
+    desc: "A Birthday Management application that allows capturing the first name and ID number, and then be able to calculate upcoming birthdays in the next 7 days based on ID number.",
     github: "https://github.com/christiangubana/birthday-management",
     link: "https://christiangubana.github.io/birthday-management/",
   },
