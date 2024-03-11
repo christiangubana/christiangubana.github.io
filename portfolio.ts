@@ -101,24 +101,24 @@ export const skillsSection: SkillsSectionType = {
 export const SkillBars: SkillBarsType[] = [
   {
     Stack: "Frontend/Design",
-    progressPercentage: "85",
+    progressPercentage: "65",
   },
   {
     Stack: "Backend",
-    progressPercentage: "90",
+    progressPercentage: "50",
   },
   {
     Stack: "Programming",
-    progressPercentage: "95",
+    progressPercentage: "75",
   },
 ];
 
 export const educationInfo: EducationType[] = [
   {
-    schoolName: "University of Central Punjab",
-    subHeader: "Bachelor of Science in Computer Science",
-    duration: "September 2017 - April 2020",
-    desc: "",
+    schoolName: "CS50 | Harvard University | May 2019",
+    subHeader: "Introduction to Computer Science",
+    duration: "May 2019",
+    desc: "I took the course to introduction to the intellectual enterprises of computer science at Harvard University through EdX",
     grade: "Grade A",
     descBullets: [], // Array of Strings
   },
@@ -126,18 +126,18 @@ export const educationInfo: EducationType[] = [
 
 export const experience: ExperienceType[] = [
   {
-    role: "Software Developer",
-    company: "Platform45",
-    companyLogo: "/img/icons/common/platform45.png",
-    date: "Nov 2021 - Oct 2022",
-    desc: "Helped my team develop high-quality software. Built beautifully designed digital products for both international and local clients, optimized UI/UX processes, and accessible across a broad range of platforms. Identified areas for modification in existing programs and subsequently developed these modifications, consulted and worked closely with cross-functional teams to gather requirements.",
-  },
-  {
     role: "Frontend Developer",
     company: "Injozi",
     companyLogo: "/img/icons/common/injozi.jpg",
     date: "Jan 2023 - Dec 2023",
     desc: "Responsible for turning wireframes and mock-ups into reusable code and building high-quality UI components with high-quality, and scalability. Develop features with web development best practices. Collaborate with teams and stakeholders across the organization to discuss the needs, design, and functionality of the project. Debug errors, and troubleshoot issues.",
+  },
+  {
+    role: "Software Developer",
+    company: "Platform45",
+    companyLogo: "/img/icons/common/platform45.png",
+    date: "Nov 2021 - Oct 2022",
+    desc: "Helped my team develop high-quality software. Built beautifully designed digital products for both international and local clients, optimized UI/UX processes, and accessible across a broad range of platforms. Identified areas for modification in existing programs and subsequently developed these modifications, consulted and worked closely with cross-functional teams to gather requirements.",
   },
 ];
 
