@@ -143,6 +143,11 @@ export const experience: ExperienceType[] = [
 
 export const projects: ProjectType[] = [
   {
+    name: "Inventory Management",
+    desc: "A full stack application, tailored to facilitate a chef(working in a Kota shop) in managing food items invetory. The app uses Authentication with JSON Web Tokens (JWTs) user encryption.",
+    github: "https://github.com/christiangubana/inventory-management",
+  },
+  {
     name: "Birthday Management",
     desc: "A Birthday Management application that allows capturing the first name and ID number, and then be able to calculate upcoming birthdays in the next 7 days based on ID number.",
     github: "https://github.com/christiangubana/birthday-management",
