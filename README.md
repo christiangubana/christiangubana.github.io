@@ -1,4 +1,4 @@
-<h1 align="center">Peronal website</h1>
+<h1 align="center">christiangubana website</h1>
 
 ## How To Use
 
