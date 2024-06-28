@@ -16,7 +16,7 @@ export const greetings: GreetingsType = {
   title: "Hi, my name is Christian",
   description:
     "I'm a professional software developer driven by a profound passion for problem-solving, I help software teams build better software and have happier customers. My expertise spans front-end and back-end integration, My journey in the world of technology began with a relentless curiosity and a commitment to continuous learning and honing of professional development",
-  resumeLink: "/img/icons/common/pdf/CV-Christian-Ngubana.pdf",
+  // resumeLink: "/img/icons/common/pdf/CV-Christian-Ngubana.pdf",
 };
 
 export const openSource = {
