@@ -1,3 +1,208 @@
 body > div:first-child {
   overflow-x: hidden;
 }
+
+/* Modern Professional Enhancements */
+:root {
+  --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --secondary-gradient: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+  --accent-color: #5e72e4;
+  --text-dark: #32325d;
+  --text-light: #8898aa;
+}
+
+/* Smooth Scroll Behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Enhanced Typography */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.display-3 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .display-3 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Enhanced Buttons */
+.btn {
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.btn-lg {
+  padding: 0.875rem 1.5rem;
+  font-size: 1rem;
+}
+
+/* Card Enhancements */
+.card {
+  border: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.shadow-lg--hover:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* Profile Image Enhancement */
+.rounded-circle {
+  transition: all 0.3s ease;
+}
+
+.rounded-circle:hover {
+  transform: scale(1.05);
+}
+
+/* Icon Enhancements */
+.icon {
+  transition: all 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Social Links Enhancement */
+.btn-icon-only {
+  transition: all 0.3s ease;
+}
+
+.btn-icon-only:hover {
+  transform: translateY(-3px);
+}
+
+/* Section Spacing */
+.section {
+  padding: 5rem 0;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 0;
+  }
+}
+
+/* Skill Icons Grid */
+.d-flex.flex-wrap {
+  gap: 0.5rem;
+}
+
+/* Progress Bar Enhancement */
+.progress {
+  height: 8px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #e9ecef;
+}
+
+.progress-bar {
+  background: var(--primary-gradient);
+  transition: width 1s ease-in-out;
+}
+
+/* Animation for fade-in elements */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Gradient Text Effect */
+.gradient-text {
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Project Card Enhancement */
+.card .description {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* Experience Card Enhancement */
+.card ul {
+  padding-left: 1.25rem;
+  margin-top: 1rem;
+}
+
+.card ul li {
+  margin-bottom: 0.5rem;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.card ul li::marker {
+  color: var(--accent-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .order-2.order-lg-1 {
+    margin-top: 2rem;
+  }
+}
+
+/* Loading animation for images */
+img {
+  transition: opacity 0.3s ease;
+}
+
+img:not([src]) {
+  opacity: 0;
+}
+
+/* Accessibility improvements */
+a:focus,
+button:focus {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+/* Print styles for resume */
+@media print {
+  .btn-wrapper,
+  .social-links {
+    display: none;
+  }
+  
+  .section {
+    page-break-inside: avoid;
+  }
+}

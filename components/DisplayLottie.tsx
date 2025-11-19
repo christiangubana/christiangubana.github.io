@@ -1,5 +1,6 @@
 import React from "react";
-import Lottie from "react-lottie";
+import dynamic from "next/dynamic";
+const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
 
 type Props = {
   animationPath: string;

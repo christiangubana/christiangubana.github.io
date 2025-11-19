@@ -17,7 +17,8 @@ const Education = () => {
                 </div>
               </div>
               <div className="pl-4">
-                <h4 className="display-3 text-white">Education</h4>
+                <h4 className="display-3 text-white">Education & Certifications</h4>
+                <p className="lead text-white-50">Continuous learning and professional development</p>
               </div>
             </div>
             <Row className="row-grid align-items-center">

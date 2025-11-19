@@ -8,7 +8,7 @@ const Feedbacks = () => {
   return (
     feedbacks && (
       <Fade bottom duration={2000}>
-        <section className="section section-lg">
+        <section className="section section-lg bg-light">
           <Container>
             <div className="d-flex p-4">
               <div>
@@ -17,7 +17,8 @@ const Feedbacks = () => {
                 </div>
               </div>
               <div className="pl-4">
-                <h4 className="display-3 text-info">Mentor's Feedback</h4>
+                <h4 className="display-3 text-info">Testimonials & Recommendations</h4>
+                <p className="lead text-muted">What colleagues and mentors say about working with me</p>
               </div>
             </div>
             <Row className="g-3">

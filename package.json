@@ -4,7 +4,7 @@
   "description": "Software Developer Portfolio Template built with react.js bootstrap that helps me showcase my work and skills as a software developer.",
   "main": "index.js",
   "repository": "https://github.com/christiangubana/christiangubana.github.io.git",
-  "author": "Christian Ngubana",
+  "author": "christiangubana",
   "license": "MIT",
   "scripts": {
     "dev": "next dev",

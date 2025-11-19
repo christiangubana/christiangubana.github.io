@@ -9,17 +9,18 @@ const Proficiency = () => {
     SkillBars && (
       <Container className="section section-lg">
         <Fade bottom duration={2000}>
-          <Row>
-            <Col lg="6">
-              <h1 className="h1">Proficiency</h1>
+          <Row className="align-items-center">
+            <Col lg="6" className="mb-5 mb-lg-0">
+              <h1 className="h1 mb-4">Technical Proficiency</h1>
+              <p className="lead text-muted mb-5">
+                Skills refined through hands-on experience building production-ready applications
+              </p>
               {SkillBars.map(skill => {
                 return (
-                  <div className="progress-info" key={skill.Stack}>
-                    <div className="progress-label">
-                      <span>{skill.Stack}</span>
-                    </div>
-                    <div className="progress-percentage">
-                      <span>{skill.progressPercentage}%</span>
+                  <div className="progress-info mb-4" key={skill.Stack}>
+                    <div className="progress-label d-flex justify-content-between mb-2">
+                      <span className="font-weight-600">{skill.Stack}</span>
+                      <span className="text-info font-weight-bold">{skill.progressPercentage}%</span>
                     </div>
                     <Progress
                       max="100"
@@ -27,6 +28,7 @@ const Proficiency = () => {
                       color="info"
                       role="progressbar"
                       aria-label={skill.Stack}
+                      style={{ height: "10px", borderRadius: "10px" }}
                     />
                   </div>
                 );

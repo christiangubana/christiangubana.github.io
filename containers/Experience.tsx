@@ -8,7 +8,7 @@ const Experience = () => {
   return (
     experience && (
       <Fade bottom duration={2000}>
-        <section className="section section-lg">
+        <section className="section section-lg bg-light">
           <Container>
             <div className="d-flex p-4">
               <div>
@@ -17,7 +17,8 @@ const Experience = () => {
                 </div>
               </div>
               <div className="pl-4">
-                <h4 className="display-3 text-info">Experience</h4>
+                <h4 className="display-3 text-info">Professional Experience</h4>
+                <p className="lead text-muted">Building impactful solutions across diverse industries</p>
               </div>
             </div>
             <Row className="row-grid align-items-start">

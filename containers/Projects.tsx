@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     projects && (
       <Fade bottom duration={2000}>
-        <section className="section section-lg">
+        <section id="projects" className="section section-lg">
           <Container>
             <div className="d-flex p-4">
               <div>
@@ -17,7 +17,8 @@ const Projects = () => {
                 </div>
               </div>
               <div className="pl-4">
-                <h4 className="display-3 text-info">Projects</h4>
+                <h4 className="display-3 text-info">Featured Projects</h4>
+                <p className="lead text-muted">Showcasing impactful solutions and technical expertise</p>
               </div>
             </div>
             <Row className="row-grid align-items-center">

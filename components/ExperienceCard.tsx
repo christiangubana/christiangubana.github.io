@@ -6,40 +6,45 @@ import { ExperienceType } from "../types/sections";
 const ExperienceCard = ({ companyLogo, company, role, date, desc, descBullets }: ExperienceType) => {
   return (
     <Col lg="6">
-      <Card style={{ flex: 1 }} className="shadow-lg--hover my-4 shadow border-0 text-center rounded h-100">
-        <CardBody className="">
+      <Card
+        style={{ flex: 1, borderRadius: "0.75rem" }}
+        className="shadow-lg--hover my-4 shadow border-0 text-center h-100"
+      >
+        <CardBody className="d-flex flex-column">
           <img
             src={companyLogo}
             style={{
               objectFit: "cover",
-              left: 0,
-              right: 0,
-              top: "7rem",
               marginLeft: "auto",
               marginRight: "auto",
               width: "8rem",
               height: "8rem",
               borderRadius: "50%",
+              border: "4px solid #f7f8fc",
             }}
-            className="shadow mb-3"
-            alt={companyLogo}
+            className="shadow-sm mb-4"
+            alt={company || role}
           />
-          {/* <CardTitle tag="h4" className="mb-2">
-            {company}
-          </CardTitle> */}
-          <CardSubtitle tag="h5" className="mb-2">
+          <CardSubtitle tag="h4" className="mb-2 font-weight-bold text-dark">
             {role}
           </CardSubtitle>
-          <CardSubtitle>{date}</CardSubtitle>
-          <CardText tag="div" className="description my-3 text-left">
-            {desc}
-            <ul>
-              {descBullets
-                ? descBullets.map(desc => {
-                    return <li key={desc}>{desc}</li>;
-                  })
-                : null}
-            </ul>
+          <CardSubtitle className="mb-3 text-muted">
+            <i className="fa fa-calendar mr-2" />
+            {date}
+          </CardSubtitle>
+          <CardText tag="div" className="description my-3 text-left flex-grow-1">
+            <p className="text-dark mb-3">{desc}</p>
+            {descBullets && descBullets.length > 0 && (
+              <ul className="text-left pl-4">
+                {descBullets.map((bullet, index) => {
+                  return (
+                    <li key={index} className="mb-2">
+                      {bullet}
+                    </li>
+                  );
+                })}
+              </ul>
+            )}
           </CardText>
         </CardBody>
       </Card>
