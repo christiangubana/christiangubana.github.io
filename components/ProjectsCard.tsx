@@ -12,7 +12,7 @@ const ProjectsCard = ({ name, desc, github, link }: ProjectType) => {
               <div className="icon icon-shape bg-gradient-primary text-white rounded-circle mr-3">
                 <i className="ni ni-laptop" />
               </div>
-              <h3 className="mb-0">{name}</h3>
+              <h5 className="mb-0 font-weight-bold">{name}</h5>
             </div>
           </div>
           <p className="description mt-2 flex-grow-1">{desc}</p>

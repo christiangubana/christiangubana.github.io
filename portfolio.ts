@@ -187,6 +187,20 @@ export const educationInfo: EducationType[] = [
 
 export const experience: ExperienceType[] = [
   {
+    role: "Full-Stack Software Developer",
+    company: "Meyk",
+    companyLogo: "/img/icons/common/meganos.png",
+    date: "Jan 2024 - Present",
+    desc: "Building and maintaining full-stack applications using modern TypeScript ecosystem, delivering robust solutions with NestJS backend and React/Next.js frontend.",
+    descBullets: [
+      "Developing scalable RESTful APIs and microservices using NestJS with TypeScript",
+      "Building responsive, performant user interfaces with Next.js and React",
+      "Designing and optimizing PostgreSQL database schemas for complex data relationships",
+      "Implementing end-to-end type safety across the full stack with TypeScript",
+      "Collaborating in Agile sprints to deliver features on time with high code quality",
+    ],
+  },
+  {
     role: "Frontend Developer",
     company: "Injozi",
     companyLogo: "/img/icons/common/injozi.jpg",
@@ -217,7 +231,7 @@ export const experience: ExperienceType[] = [
   {
     role: "Junior Developer",
     company: "Code Collective",
-    companyLogo: "/img/icons/common/github.svg",
+    companyLogo: "/img/icons/common/cc.jpeg",
     date: "2019 - 2021",
     desc: "Built foundational software engineering skills through freelance projects and open-source contributions.",
     descBullets: [
