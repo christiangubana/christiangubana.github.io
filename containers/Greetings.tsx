@@ -45,6 +45,7 @@ const Greetings = () => {
                         size="lg"
                         href={greetings.resumeLink}
                         target="_blank"
+                        disabled
                       >
                         <span className="btn-inner--icon mr-2">
                           <i className="fa fa-file-pdf-o" />
