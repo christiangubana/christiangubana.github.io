@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
 import React, { Fragment } from "react";
-import Fade from "react-reveal/Fade";
+import { motion } from "framer-motion";
 import { Col, Container, Row, UncontrolledTooltip } from "reactstrap";
 import DisplayLottie from "../components/DisplayLottie";
 import { skillsSection } from "../portfolio";
@@ -18,7 +18,12 @@ const Skills = () => {
 
   return (
     skillsSection && (
-      <Fade bottom duration={2000}>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.1 }}
+        transition={{ duration: 2 }}
+      >
         <Container className="text-center my-5 section section-lg">
           <h1 className="h1 mb-3">{skillsSection.title}</h1>
           <p className="lead text-muted mb-5" style={{ maxWidth: "800px", margin: "0 auto" }}>
@@ -49,7 +54,11 @@ const Skills = () => {
                   </div>
                   <div>
                     {section.skills.map((skill, i) => {
-                      return <p key={i}>{skill}</p>;
+                      return (
+                        <p key={i} className="lead text-muted">
+                          {skill}
+                        </p>
+                      );
                     })}
                   </div>
                 </Col>
@@ -57,7 +66,7 @@ const Skills = () => {
             );
           })}
         </Container>
-      </Fade>
+      </motion.div>
     )
   );
 };

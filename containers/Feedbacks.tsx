@@ -2,12 +2,17 @@ import { feedbacks } from "../portfolio";
 import React from "react";
 import { Col, Container, Row } from "reactstrap";
 import FeedbackCard from "../components/FeedbackCard";
-import Fade from "react-reveal/Fade";
+import { motion } from "framer-motion";
 
 const Feedbacks = () => {
   return (
     feedbacks && (
-      <Fade bottom duration={2000}>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.1 }}
+        transition={{ duration: 2 }}
+      >
         <section className="section section-lg bg-light">
           <Container>
             <div className="d-flex p-4">
@@ -32,7 +37,7 @@ const Feedbacks = () => {
             </Row>
           </Container>
         </section>
-      </Fade>
+      </motion.div>
     )
   );
 };

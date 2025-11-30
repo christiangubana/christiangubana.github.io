@@ -2,12 +2,17 @@ import React from "react";
 import { projects } from "../portfolio";
 import { Container, Row } from "reactstrap";
 import ProjectsCard from "../components/ProjectsCard";
-import Fade from "react-reveal/Fade";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
     projects && (
-      <Fade bottom duration={2000}>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.1 }}
+        transition={{ duration: 2 }}
+      >
         <section id="projects" className="section section-lg">
           <Container>
             <div className="d-flex p-4">
@@ -28,7 +33,7 @@ const Projects = () => {
             </Row>
           </Container>
         </section>
-      </Fade>
+      </motion.div>
     )
   );
 };

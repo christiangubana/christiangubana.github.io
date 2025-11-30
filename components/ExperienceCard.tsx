@@ -1,6 +1,5 @@
 import React from "react";
 import { Card, CardBody, CardTitle, CardSubtitle, CardText, Col } from "reactstrap";
-import Fade from "react-reveal/Fade";
 import { ExperienceType } from "../types/sections";
 
 const ExperienceCard = ({ companyLogo, company, role, date, desc, descBullets }: ExperienceType) => {
@@ -15,12 +14,14 @@ const ExperienceCard = ({ companyLogo, company, role, date, desc, descBullets }:
             src={companyLogo}
             style={{
               objectFit: "cover",
+              objectPosition: "center",
               marginLeft: "auto",
               marginRight: "auto",
               width: "8rem",
               height: "8rem",
               borderRadius: "50%",
               border: "4px solid #f7f8fc",
+              display: "block",
             }}
             className="shadow-sm mb-4"
             alt={company || role}

@@ -74,7 +74,7 @@ const Greetings = () => {
                   />
                   <div className="text-white mt-3">
                     <h5 className="text-white font-weight-bold">Open to Remote Work</h5>
-                    <p className="text-white-50">Available for International Opportunities</p>
+                    <p className="text-white-50">Available for Exciting Opportunities</p>
                   </div>
                 </Col>
               </Row>

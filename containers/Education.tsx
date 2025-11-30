@@ -2,12 +2,17 @@ import React from "react";
 import EducationCard from "../components/EducationCard";
 import { educationInfo } from "../portfolio";
 import { Container, Row, Col } from "reactstrap";
-import Fade from "react-reveal/Fade";
+import { motion } from "framer-motion";
 
 const Education = () => {
   return (
     educationInfo && (
-      <Fade bottom duration={2000}>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.1 }}
+        transition={{ duration: 2 }}
+      >
         <section className="section pb-0 bg-gradient-info my-5">
           <Container>
             <div className="d-flex px-3">
@@ -44,7 +49,7 @@ const Education = () => {
             </svg>
           </div>
         </section>
-      </Fade>
+      </motion.div>
     )
   );
 };
