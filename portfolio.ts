@@ -189,7 +189,7 @@ export const experience: ExperienceType[] = [
   {
     role: "Full-Stack Software Developer",
     company: "Meyk",
-    companyLogo: "/img/icons/common/meganos.png",
+    companyLogo: "/img/icons/common/m.ico",
     date: "Jan 2024 - Present",
     desc: "Building and maintaining full-stack applications using modern TypeScript ecosystem, delivering robust solutions with NestJS backend and React/Next.js frontend.",
     descBullets: [
