@@ -156,7 +156,7 @@ export const SkillBars: SkillBarsType[] = [
     progressPercentage: "90",
   },
   {
-    Stack: "Backend Development (Node.js, Express, APIs)",
+    Stack: "Backend Development (Node.js, Express.js, Nest.js APIs)",
     progressPercentage: "85",
   },
   {
