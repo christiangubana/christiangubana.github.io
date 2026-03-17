@@ -13,7 +13,7 @@ const Experience = () => {
         viewport={{ once: true, amount: 0.1 }}
         transition={{ duration: 2 }}
       >
-        <section className="section section-lg bg-light">
+        <section id="experience" className="section section-lg bg-light">
           <Container>
             <div className="d-flex p-4">
               <div>

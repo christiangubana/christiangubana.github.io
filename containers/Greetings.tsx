@@ -39,7 +39,7 @@ const Greetings = () => {
                   </div>
                   {greetings.resumeLink && (
                     <div className="btn-wrapper">
-                      <Button
+                      {/* <Button
                         className="btn-white btn-icon mb-3 mb-sm-0"
                         color="default"
                         size="lg"
@@ -50,6 +50,12 @@ const Greetings = () => {
                           <i className="fa fa-file-pdf-o" />
                         </span>
                         <span className="btn-inner--text">Download Resume</span>
+                      </Button> */}
+                      <Button className="btn-icon mb-3 mb-sm-0 ml-1" color="white" size="lg" href="#experience" outline>
+                        <span className="btn-inner--icon mr-2">
+                          <i className="fa fa-briefcase" />
+                        </span>
+                        <span className="btn-inner--text">View Experience</span>
                       </Button>
                       <Button className="btn-icon mb-3 mb-sm-0 ml-1" color="white" size="lg" href="#projects" outline>
                         <span className="btn-inner--icon mr-2">
