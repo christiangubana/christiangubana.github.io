@@ -16,7 +16,7 @@ export const greetings: GreetingsType = {
   title: "Hi, I'm Christian Ngubana",
   description:
     "A passionate Full-Stack Software Engineer with 4+ years of experience building scalable web applications and delivering exceptional digital experiences. I specialize in React, Node.js, and modern JavaScript ecosystems, transforming complex business requirements into elegant, user-centric solutions. I thrive in collaborative environments, excel at remote work, and am committed to writing clean, maintainable code that drives business value. Open to exciting remote opportunities where I can contribute to innovative projects and grow alongside talented teams.",
-  resumeLink: "/img/icons/common/pdf/CV-Christian-Ngubana.pdf",
+  resumeLink: "/img/icons/common/pdf/christiangubana-resume.pdf",
 };
 
 export const openSource = {
