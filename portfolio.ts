@@ -233,12 +233,12 @@ export const experience: ExperienceType[] = [
     company: "Code Collective",
     companyLogo: "/img/icons/common/cc.jpeg",
     date: "2019 - 2020",
-    desc: "Built foundational software engineering skills on a multidisciplinary engineering team, delivering client web solutions and contributing to open-source projects.",
+    desc: "Grew as a junior engineer on an agile, multidisciplinary team—shipping client features solo and through pair programming across Web APIs, C#.NET, and SQL Server.",
     descBullets: [
-      "Delivered 15+ web development projects for small businesses and startups as part of a multidisciplinary engineering team",
-      "Contributed to open-source projects, collaborating with global developer communities",
-      "Developed proficiency in modern web technologies and software development lifecycle",
-      "Created technical documentation and maintained codebases with version control best practices",
+      "Shipped small to medium-sized features in sprint-based delivery, working independently and pairing with developers to meet client goals",
+      "Built and integrated solutions with Web APIs, C#.NET, and SQL Server for small business and startup clients",
+      "Debugged issues and turned planning-session requirements into practical, production-ready implementations",
+      "Maintained clean codebases with version control, technical documentation, and SDLC best practices",
     ],
   },
 ];
