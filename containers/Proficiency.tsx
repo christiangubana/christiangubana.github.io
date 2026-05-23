@@ -23,8 +23,8 @@ const Proficiency = () => {
               {SkillBars.map(skill => {
                 return (
                   <div className="progress-info mb-4" key={skill.Stack}>
-                    <div className="progress-label d-flex justify-content-between mb-2">
-                      <span className="lead text-muted font-weight-600">{skill.Stack}</span>
+                    <div className="progress-label d-flex justify-content-between align-items-start mb-2 flex-wrap">
+                      <span className="lead text-muted font-weight-600 progress-skill-label">{skill.Stack}</span>
                       <span className="text-info font-weight-bold">{skill.progressPercentage}%</span>
                     </div>
                     <Progress

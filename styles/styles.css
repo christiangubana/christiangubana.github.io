@@ -179,6 +179,186 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* Navigation — mobile */
+.navbar-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar-brand-custom {
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: calc(100% - 3.5rem);
+  margin-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.35rem;
+}
+
+.nav-brand-title {
+  display: block;
+  font-family: Augestina, cursive;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin: 0;
+  padding-top: 0.25rem;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: visible;
+  text-overflow: ellipsis;
+}
+
+@media (min-width: 992px) {
+  .nav-brand-title {
+    font-size: 1.75rem;
+  }
+}
+
+.navbar-toggler-custom {
+  flex-shrink: 0;
+  margin-left: auto;
+  padding: 0.5rem 0.65rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0.375rem;
+  z-index: 101;
+}
+
+.navbar-main .nav-link-inner--text {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+@media (min-width: 992px) {
+  .navbar-transparent .navbar-main .nav-link-inner--text {
+    color: rgba(255, 255, 255, 0.95) !important;
+  }
+
+  .navbar-transparent .navbar-main .nav-link-inner--text:hover {
+    color: rgba(255, 255, 255, 0.75) !important;
+  }
+}
+
+.hero-content .btn-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+@media (max-width: 991.98px) {
+  .header-global {
+    position: relative;
+    z-index: 1100;
+  }
+
+  .navbar-main .navbar-nav .nav-item {
+    width: 100%;
+  }
+
+  .navbar-main .nav-link-inner--text {
+    display: block;
+    padding: 0.75rem 0;
+    color: #172b4d !important;
+  }
+
+  .navbar-collapse.show .navbar-nav,
+  .navbar-collapse.collapsing .navbar-nav {
+    padding-top: 0.5rem;
+  }
+}
+
+/* Hero / greetings */
+.hero-content {
+  padding-top: 5.5rem;
+}
+
+@media (min-width: 992px) {
+  .hero-content {
+    padding-top: 6rem;
+  }
+}
+
+.hero-title {
+  margin-top: 0.5rem;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 575.98px) {
+  .hero-description {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .hero-profile-image {
+    width: 220px !important;
+    height: 220px !important;
+  }
+}
+
+.hero-cta-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 576px) {
+  .hero-cta-buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+.hero-cta-btn {
+  width: 100%;
+  margin: 0 !important;
+}
+
+@media (min-width: 576px) {
+  .hero-cta-btn {
+    width: auto;
+  }
+}
+
+/* Proficiency — long skill labels on narrow screens */
+.progress-skill-label {
+  flex: 1 1 60%;
+  min-width: 0;
+  font-size: 0.8rem !important;
+  line-height: 1.4;
+  padding-right: 0.5rem;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .progress-skill-label {
+    font-size: 1rem !important;
+  }
+}
+
+.progress-label .text-info {
+  flex-shrink: 0;
+}
+
+/* Section headings (experience, etc.) */
+@media (max-width: 767.98px) {
+  .section-heading .display-3 {
+    font-size: 2rem;
+  }
+
+  .section-heading .pl-4 {
+    padding-left: 1rem !important;
+  }
+}
+
 /* Loading animation for images */
 img {
   transition: opacity 0.3s ease;

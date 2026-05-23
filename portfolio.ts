@@ -15,7 +15,7 @@ export const greetings: GreetingsType = {
   name: "Christian Ngubana",
   title: "Hi, I'm Christian Ngubana",
   description:
-    "A passionate Full-Stack Software Engineer with 4+ years of experience building scalable web applications and delivering exceptional digital experiences. I specialize in React, Node.js, and modern JavaScript ecosystems, transforming complex business requirements into elegant, user-centric solutions. I thrive in collaborative environments, excel at remote work, and am committed to writing clean, maintainable code that drives business value. Open to exciting remote opportunities where I can contribute to innovative projects and grow alongside talented teams.",
+    "A passionate Full-Stack Software Engineer with 5+ years of experience building scalable web applications and delivering exceptional digital experiences. I specialize in React, Node.js, and modern JavaScript ecosystems, transforming complex business requirements into elegant, user-centric solutions. I thrive in collaborative environments, excel at remote work, and am committed to writing clean, maintainable code that drives business value. Open to exciting remote opportunities where I can contribute to innovative projects and grow alongside talented teams.",
   resumeLink: "/img/icons/common/pdf/christiangubana-resume.pdf",
 };
 
@@ -229,13 +229,13 @@ export const experience: ExperienceType[] = [
     ],
   },
   {
-    role: "Junior Developer",
+    role: "Junior Developer Intern",
     company: "Code Collective",
     companyLogo: "/img/icons/common/cc.jpeg",
-    date: "2019 - 2021",
-    desc: "Built foundational software engineering skills through freelance projects and open-source contributions.",
+    date: "2019 - 2020",
+    desc: "Built foundational software engineering skills on a multidisciplinary engineering team, delivering client web solutions and contributing to open-source projects.",
     descBullets: [
-      "Completed 15+ freelance web development projects for small businesses and startups",
+      "Delivered 15+ web development projects for small businesses and startups as part of a multidisciplinary engineering team",
       "Contributed to open-source projects, collaborating with global developer communities",
       "Developed proficiency in modern web technologies and software development lifecycle",
       "Created technical documentation and maintained codebases with version control best practices",

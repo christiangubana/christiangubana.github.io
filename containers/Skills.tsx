@@ -24,7 +24,7 @@ const Skills = () => {
         viewport={{ once: true, amount: 0.1 }}
         transition={{ duration: 2 }}
       >
-        <Container className="text-center my-5 section section-lg">
+        <Container id="skills" className="text-center my-5 section section-lg">
           <h1 className="h1 mb-3">{skillsSection.title}</h1>
           <p className="lead text-muted mb-5" style={{ maxWidth: "800px", margin: "0 auto" }}>
             {skillsSection.subTitle}

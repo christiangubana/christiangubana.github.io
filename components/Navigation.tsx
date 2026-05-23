@@ -19,13 +19,18 @@ const Navigation = () => {
     <>
       <header className="header-global">
         <Navbar className="navbar-main navbar-transparent navbar-light headroom" expand="lg" id="navbar-main">
-          <Container>
-            <NavbarBrand href="/" className="mr-lg-5">
-              <h2 className="text-white" id="nav-title">
+          <Container className="navbar-container">
+            <NavbarBrand href="/" className="navbar-brand-custom mr-lg-4">
+              <span className="text-white nav-brand-title" id="nav-title">
                 {greetings.name}
-              </h2>
+              </span>
             </NavbarBrand>
-            <button className="navbar-toggler" aria-label="navbar_toggle" id="navbar_global">
+            <button
+              className="navbar-toggler navbar-toggler-custom"
+              type="button"
+              aria-label="Toggle navigation"
+              id="navbar_global"
+            >
               <span className="navbar-toggler-icon" />
             </button>
             <UncontrolledCollapse
@@ -38,9 +43,7 @@ const Navigation = () => {
               <div className="navbar-collapse-header">
                 <Row>
                   <Col className="collapse-brand" xs="6">
-                    <h3 className="text-black" id="nav-title">
-                      {greetings.name}
-                    </h3>
+                    <span className="text-black nav-brand-title">{greetings.name}</span>
                   </Col>
                   <Col className="collapse-close" xs="6">
                     <button className="navbar-toggler" id="navbar_global">
@@ -51,6 +54,21 @@ const Navigation = () => {
                 </Row>
               </div>
               <Nav className="align-items-lg-center ml-lg-auto" navbar>
+                <NavItem>
+                  <NavLink className="nav-link-inner--text" href="#skills">
+                    Skills
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink className="nav-link-inner--text" href="#experience">
+                    Experience
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink className="nav-link-inner--text" href="#projects">
+                    Projects
+                  </NavLink>
+                </NavItem>
                 {socialLinks.facebook && (
                   <NavItem>
                     <NavLink
