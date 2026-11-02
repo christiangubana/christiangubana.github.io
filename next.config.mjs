@@ -1,20 +1,11 @@
-// module.exports = {
-//   reactStrictMode: false,
-//   images: {
-//     domains: ["avatars.githubusercontent.com"],
-//   },
-//   output: "standalone",
-// };
-
 /**
+ * Static export for GitHub Pages.
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
-  images: {
-    loader: "akamai",
-    path: "",
-  },
-  assetPrefix: "./",
+  output: "export",
+  trailingSlash: true,
+  images: { unoptimized: true },
 };
 
 export default nextConfig;

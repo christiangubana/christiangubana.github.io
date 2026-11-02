@@ -1,333 +1,251 @@
-import emoji from "react-easy-emoji";
+// All site copy lives here. Edit this file to update the site.
 import {
-  EducationType,
+  EarlierWorkType,
+  EngagementType,
   ExperienceType,
   FeedbackType,
-  ProjectType,
-  SkillsSectionType,
-  SkillBarsType,
+  ProcessStepType,
+  ProfileType,
   SEODataType,
+  ServiceType,
   SocialLinksType,
-  GreetingsType,
+  WorkType,
 } from "./types/sections";
 
-export const greetings: GreetingsType = {
+export const profile: ProfileType = {
   name: "Christian Ngubana",
-  title: "Hi, I'm Christian Ngubana",
-  description:
-    "A passionate Full-Stack Software Engineer with 5+ years of experience building scalable web applications and delivering exceptional digital experiences. I specialize in React, Node.js, and modern JavaScript ecosystems, transforming complex business requirements into elegant, user-centric solutions. I thrive in collaborative environments, excel at remote work, and am committed to writing clean, maintainable code that drives business value. Open to exciting remote opportunities where I can contribute to innovative projects and grow alongside talented teams.",
+  role: "Full-stack product engineer",
+  location: "South Africa · works remotely (UTC+2)",
+  email: "christiangubana@gmail.com",
+  avatar: "https://avatars.githubusercontent.com/u/101836990?v=4",
   resumeLink: "/img/icons/common/pdf/christiangubana-resume.pdf",
+  availability: "Open to remote roles & projects",
 };
-
-export const openSource = {
-  githubUserName: "christiangubana",
-};
-
-export const contact = {};
 
 export const socialLinks: SocialLinksType = {
-  email: "mailto:christiangubana@gmail.com",
+  email: "mailto:christiangubana@gmail.com?subject=Project%20enquiry",
   linkedin: "https://www.linkedin.com/in/christiangubana/",
   github: "https://github.com/christiangubana",
-  twitter: "https://twitter.com/christiangubana",
+  twitter: "https://x.com/Christiangubana",
 };
 
-export const skillsSection: SkillsSectionType = {
-  title: "What I Do",
-  subTitle: "FULL-STACK ENGINEER SPECIALIZED IN MODERN WEB TECHNOLOGIES & CLOUD ARCHITECTURE",
-  data: [
-    {
-      title: "Full Stack Development",
-      lottieAnimationFile: "/lottie/skills/fullstack.json",
-      skills: [
-        emoji("⚡ Building scalable Single-Page Applications (SPA) & Progressive Web Apps (PWA) with React.js"),
-        emoji("⚡ Developing high-performance SSR/SSG applications using Next.js for optimal SEO"),
-        emoji("⚡ Architecting robust RESTful & GraphQL APIs with Node.js, Express.js, and NestJS"),
-        emoji("⚡ Implementing responsive, accessible UI with modern CSS frameworks and design systems"),
-        emoji("⚡ Database design & optimization with PostgreSQL, MongoDB, and Redis caching"),
-        emoji("⚡ Test-driven development using Jest, React Testing Library, and Cypress"),
-        emoji("⚡ CI/CD pipeline setup with GitHub Actions, Docker, and cloud deployment"),
-      ],
-      softwareSkills: [
-        {
-          skillName: "JavaScript",
-          iconifyTag: "logos:javascript",
-        },
-        {
-          skillName: "TypeScript",
-          iconifyTag: "logos:typescript-icon",
-        },
-        {
-          skillName: "React",
-          iconifyTag: "vscode-icons:file-type-reactjs",
-        },
-        {
-          skillName: "Next.js",
-          iconifyTag: "vscode-icons:file-type-light-next",
-        },
-        {
-          skillName: "Vue.js",
-          iconifyTag: "logos:vue",
-        },
-        {
-          skillName: "Node.js",
-          iconifyTag: "logos:nodejs-icon",
-        },
-        {
-          skillName: "Express",
-          iconifyTag: "simple-icons:express",
-        },
-        {
-          skillName: "NestJS",
-          iconifyTag: "logos:nestjs",
-        },
-        {
-          skillName: "GraphQL",
-          iconifyTag: "logos:graphql",
-        },
-        {
-          skillName: "Python",
-          iconifyTag: "logos:python",
-        },
-        {
-          skillName: "PostgreSQL",
-          iconifyTag: "logos:postgresql",
-        },
-        {
-          skillName: "MongoDB",
-          iconifyTag: "vscode-icons:file-type-mongo",
-        },
-        {
-          skillName: "Redis",
-          iconifyTag: "logos:redis",
-        },
-        {
-          skillName: "Tailwind CSS",
-          iconifyTag: "logos:tailwindcss-icon",
-        },
-        {
-          skillName: "Material-UI",
-          iconifyTag: "logos:material-ui",
-        },
-        {
-          skillName: "Sass",
-          iconifyTag: "logos:sass",
-        },
-        {
-          skillName: "Git",
-          iconifyTag: "logos:git-icon",
-        },
-        {
-          skillName: "GitHub",
-          iconifyTag: "akar-icons:github-fill",
-        },
-        {
-          skillName: "Docker",
-          iconifyTag: "logos:docker-icon",
-        },
-        {
-          skillName: "AWS",
-          iconifyTag: "logos:aws",
-        },
-        {
-          skillName: "Jest",
-          iconifyTag: "logos:jest",
-        },
-        {
-          skillName: "Cypress",
-          iconifyTag: "simple-icons:cypress",
-        },
-        {
-          skillName: "Webpack",
-          iconifyTag: "logos:webpack",
-        },
-        {
-          skillName: "Vite",
-          iconifyTag: "logos:vitejs",
-        },
-      ],
-    },
-  ],
+export const hero = {
+  eyebrow: "TypeScript · React · Next.js · Node.js · NestJS · PostgreSQL · Prisma · Supabase · Stripe · AWS · Docker",
+  title: "I help founders, agencies and growing businesses ship production software.",
+  lead: "I'm a full-stack engineer with 5+ years of experience. I can join your team as an extra engineer, or take a feature or a whole product from first commit to production. Right now I'm building FloorTick, a multi-tenant compliance platform. In 2025–2026 I led development of three platforms used by thousands of people.",
 };
 
-export const SkillBars: SkillBarsType[] = [
+export const work: WorkType[] = [
   {
-    Stack: "Frontend Development (React, Next.js, TypeScript)",
-    progressPercentage: "90",
+    name: "FloorTick",
+    summary: "Multi-tenant compliance platform for manufacturing",
+    desc: "Replaces the paper records used on factory floors with configurable digital checklists, aligned with the FSSC 22000 v7 food-safety standard. Each customer organisation gets its own isolated workspace.",
+    role: "Lead engineer · client product",
+    period: "In active development",
+    stack: ["TypeScript", "NestJS", "Next.js", "PostgreSQL", "Prisma", "Vercel"],
+    highlights: [
+      "Multi-tenant data model with per-organisation isolation",
+      "Configurable checklist engine: customers define their own forms and workflows",
+      "Authentication, account recovery and tenant onboarding",
+    ],
+    link: "https://www.floortick.com/",
+    featured: true,
   },
   {
-    Stack: "Backend Development (Node.js, Express.js, Nest.js, APIs)",
-    progressPercentage: "85",
+    name: "ShareSpaceNow",
+    summary: "Marketplace for flexible warehouse and storage space",
+    desc: "Property owners list unused warehouse capacity, and businesses book it by the pallet or bay. Hosts are identity-verified and payments run through Stripe.",
+    role: "Led development",
+    period: "2025–2026",
+    stack: ["React", "Vite", "Supabase", "Stripe", "Cloudflare"],
+    link: "https://sharespacenow.com/",
   },
   {
-    Stack: "Database & Architecture (SQL/NoSQL, System Design)",
-    progressPercentage: "80",
+    name: "CampusLush",
+    summary: "Events and opportunities platform for students",
+    desc: "A platform where students discover campus events and opportunities, sign up and take part.",
+    role: "Led development",
+    period: "2025–2026",
+    stack: ["Next.js", "React", "AWS CloudFront"],
+    link: "https://campuslush.com/",
   },
   {
-    Stack: "DevOps & Cloud (Docker, AWS, CI/CD)",
-    progressPercentage: "75",
+    name: "FatAllan",
+    summary: "Restaurant discovery platform",
+    desc: "Helps diners discover and compare the best restaurants in town.",
+    role: "Led development",
+    period: "2025–2026",
+    stack: ["React", "AWS S3", "CloudFront"],
+    link: "https://www.fatallan.com/",
+  },
+  {
+    name: "Mrukumeta Trading",
+    summary: "Online store with PayFast checkout",
+    desc: "An online store for a Cape Town motorbike parts, tyres and repairs business, with a PayFast checkout so customers can order and pay online.",
+    role: "Built the store and payments Integration",
+    stack: ["Next.js", "PayFast", "Cloudinary", "Vercel"],
+    link: "https://www.mrukumetatrading.com/",
+  },
+  {
+    name: "Seneca.js",
+    summary: "Open-source contributor",
+    desc: "Merged contributions to the Seneca.js ecosystem, an MIT-licensed microservices toolkit for Node.js. My work covers example services and a Meetup API provider, including tests and documentation.",
+    role: "Contributor",
+    stack: ["Node.js", "Microservices"],
+    link: "https://github.com/search?q=org%3Asenecajs+author%3Achristiangubana&type=pullrequests",
+    linkLabel: "View pull requests",
   },
 ];
 
-export const educationInfo: EducationType[] = [
+export const earlierWork: EarlierWorkType[] = [
   {
-    schoolName: "CS50 | Harvard University",
-    subHeader: "Introduction to Computer Science",
-    duration: "2019",
-    desc: "Completed Harvard's rigorous introduction to computer science and programming, covering fundamental concepts in algorithms, data structures, software engineering, and web development.",
-    grade: "Grade A",
-    descBullets: [
-      "Mastered programming fundamentals in C, Python, SQL, JavaScript, CSS, and HTML",
-      "Implemented complex algorithms and data structures including sorting, searching, and graph traversal",
-      "Built full-stack web applications demonstrating end-to-end software development skills",
-      "Developed problem-solving abilities through challenging weekly problem sets and final project",
-    ],
+    name: "Gibeo",
+    desc: "Podcast publishing and monetisation platform with HandCash (BitcoinSV) payments.",
+    link: "https://gibeo.io/",
   },
+  {
+    name: "O Mejor Oferta",
+    desc: "Location-based mobile marketplace on Google Play, with 1,000+ downloads.",
+    link: "https://play.google.com/store/apps/details?id=com.duseca.mejor_oferta",
+  },
+  {
+    name: "Hooligan Culture",
+    desc: "E-commerce store with cryptocurrency checkout.",
+    link: "https://hooliganculture.com/",
+  },
+];
+
+export const services: ServiceType[] = [
+  {
+    title: "An extra engineer on your product",
+    forWho: "Founders, startups and tech leads",
+    desc: "You have a product and a roadmap, but not enough people to build it. I work in your repo, your stand-ups and your tools, and I ship from the first week.",
+    examples: ["New features across frontend and API", "Clearing the backlog before a launch", "Pairing with your existing developers"],
+  },
+  {
+    title: "Overflow capacity for agencies",
+    forWho: "Agencies and small software companies",
+    desc: "You've won more client work than your team can deliver. I can work white-label under your process and your client relationship, and I hand back clean, documented code.",
+    examples: ["Fixed-scope client builds", "Taking over a project mid-flight", "Short-term cover for a team member"],
+  },
+  {
+    title: "End-to-end ownership",
+    forWho: "Startups and product teams",
+    desc: "Give me a problem rather than a list of tickets. I'll scope it, build it, test it and get it into production, and send written updates along the way.",
+    examples: ["MVPs and v1 products", "Multi-tenant SaaS foundations", "Payments, billing and onboarding flows"],
+  },
+  {
+    title: "Internal tools and automation",
+    forWho: "Established businesses",
+    desc: "Your team is stuck with spreadsheets, copy-pasting and systems that don't talk to each other. I build the dashboards, integrations and automations that take over that manual work.",
+    examples: ["Admin panels and dashboards", "API and payment integrations (Stripe, PayFast)", "Replacing paper and spreadsheet processes"],
+  },
+];
+
+export const processSteps: ProcessStepType[] = [
+  {
+    title: "Intro call",
+    desc: "30 minutes on what you're building, where it's stuck and what \"done\" looks like. No charge.",
+  },
+  {
+    title: "Written plan",
+    desc: "A short document covering scope, approach, estimate and the risks I can see, so you know exactly what you're agreeing to.",
+  },
+  {
+    title: "Build in the open",
+    desc: "I work in your repository with small pull requests, a weekly demo and written progress updates. You won't have to chase me for a status report.",
+  },
+  {
+    title: "Clean handover",
+    desc: "Documentation, tests and deployment notes. Nothing is left that only I understand.",
+  },
+];
+
+export const engagements: EngagementType[] = [
+  { title: "Fixed-scope project", desc: "A clear deliverable at an agreed price. Best for MVPs, integrations and internal tools." },
+  { title: "Monthly retainer", desc: "Part-time or full-time capacity on your team, renewed month to month." },
+  { title: "Embedded contract", desc: "I join your team for a set period at a day rate. Best for agencies and teams that need cover." },
+  { title: "Full-time remote role", desc: "For the right product and team, I'm open to joining full-time, remotely." },
 ];
 
 export const experience: ExperienceType[] = [
   {
+    role: "Independent product engineer",
+    company: "Client work",
+    date: "2026 – Present",
+    desc: "Building and leading delivery of production platforms for clients, including FloorTick, ShareSpaceNow, CampusLush, FatAllan and Mrukumeta Trading.",
+  },
+  {
     role: "Full-Stack Software Developer",
     company: "Meyk",
-    companyLogo: "/img/icons/common/m.ico",
-    date: "Jan 2024 - Present",
-    desc: "Building and maintaining full-stack applications using modern TypeScript ecosystem, delivering robust solutions with NestJS backend and React/Next.js frontend.",
-    descBullets: [
-      "Developing scalable RESTful APIs and microservices using NestJS with TypeScript",
-      "Building responsive, performant user interfaces with Next.js and React",
-      "Designing and optimizing PostgreSQL database schemas for complex data relationships",
-      "Implementing end-to-end type safety across the full stack with TypeScript",
-      "Collaborating in Agile sprints to deliver features on time with high code quality",
-    ],
+    date: "Jan 2025 – Mar 2026",
+    desc: "Built APIs and services with NestJS and TypeScript, product UI with Next.js and React, and PostgreSQL schemas for complex data relationships.",
   },
   {
     role: "Frontend Developer",
     company: "Injozi",
-    companyLogo: "/img/icons/common/injozi.jpg",
-    date: "Jan 2023 - Dec 2023",
-    desc: "Led frontend development initiatives for a growing fintech platform, transforming design systems into production-ready, scalable applications.",
-    descBullets: [
-      "Architected and implemented reusable React component library, reducing development time by 40%",
-      "Optimized application performance resulting in 60% faster page load times and improved Core Web Vitals",
-      "Collaborated with cross-functional teams (Design, Backend, Product) using Agile methodologies",
-      "Implemented comprehensive unit and integration tests achieving 85% code coverage",
-      "Mentored junior developers on best practices, code reviews, and modern web development patterns",
-    ],
+    date: "Jan 2023 – Dec 2023",
+    desc: "Built a reusable React component library for a fintech platform, improved page-load performance and Core Web Vitals, and mentored junior developers.",
   },
   {
     role: "Software Developer",
     company: "Platform45",
-    companyLogo: "/img/icons/common/platform45.png",
-    date: "Nov 2021 - Oct 2022",
-    desc: "Developed full-stack solutions for diverse international clients, delivering high-quality digital products across web and mobile platforms.",
-    descBullets: [
-      "Built and deployed 10+ client projects using React, Next.js, Node.js, and modern tech stacks",
-      "Improved application accessibility (WCAG 2.1 AA compliance) ensuring inclusive user experiences",
-      "Integrated RESTful APIs and third-party services (payment gateways, analytics, authentication)",
-      "Conducted requirements gathering sessions with stakeholders to define technical specifications",
-      "Reduced bug reports by 50% through implementation of robust testing strategies and code quality standards",
-    ],
+    date: "Nov 2021 – Oct 2022",
+    desc: "Delivered 10+ client projects for international clients using React, Next.js and Node.js, including payment, analytics and authentication integrations.",
   },
   {
-    role: "Junior Developer Intern",
+    role: "Junior Developer",
     company: "Code Collective",
-    companyLogo: "/img/icons/common/cc.jpeg",
-    date: "2019 - 2020",
-    desc: "Grew as a junior engineer on an agile, multidisciplinary team—shipping client features solo and through pair programming across Web APIs, C#.NET, and SQL Server.",
-    descBullets: [
-      "Shipped small to medium-sized features in sprint-based delivery, working independently and pairing with developers to meet client goals",
-      "Built and integrated solutions with Web APIs, C#.NET, and SQL Server for small business and startup clients",
-      "Debugged issues and turned planning-session requirements into practical, production-ready implementations",
-      "Maintained clean codebases with version control, technical documentation, and SDLC best practices",
-    ],
-  },
-];
-
-export const projects: ProjectType[] = [
-  {
-    name: "Enterprise Inventory Management System",
-    desc: "Full-stack inventory management platform with real-time tracking, JWT authentication, role-based access control, and comprehensive analytics dashboard. Built with React, Node.js, Express, and PostgreSQL.",
-    github: "https://github.com/christiangubana/inventory-management",
-  },
-  {
-    name: "Giebo - Podcast Monetization Platform",
-    desc: "Revolutionary podcast platform enabling creators to publish and monetize content with HandCash BitcoinSV integration. Features include secure payments, content management, and analytics. Built for scalability and performance.",
-    link: "https://gibeo.io/",
-  },
-  {
-    name: "O Mejor Oferta - Mobile Marketplace",
-    desc: "Location-based mobile marketplace connecting buyers and sellers. Implemented geolocation services, real-time messaging, secure transactions, and intuitive UX. Published on Google Play Store with 1000+ downloads.",
-    link: "https://play.google.com/store/apps/details?id=com.duseca.mejor_oferta",
-  },
-  {
-    name: "Hooligan Culture - E-commerce Platform",
-    desc: "Modern e-commerce solution with cryptocurrency payment integration (HandCash BitcoinSV). Features include product catalog, shopping cart, secure checkout, and order management system.",
-    link: "https://hooliganculture.com/",
-  },
-  {
-    name: "Smart Birthday Reminder App",
-    desc: "Intelligent birthday management application with automatic date calculation from ID numbers, upcoming birthday notifications, and user-friendly interface. Demonstrates proficiency in date/time handling and React state management.",
-    github: "https://github.com/christiangubana/birthday-management",
-    link: "https://christiangubana.github.io/birthday-management/",
-  },
-  {
-    name: "Professional Portfolio Website",
-    desc: "Modern, responsive developer portfolio built with Next.js, TypeScript, and React. Features SSG, SEO optimization, dynamic GitHub integration, and elegant UI/UX. Open-source template used by developers worldwide.",
-    github: "https://github.com/christiangubana/christiangubana.github.io",
-    link: "https://christiangubana.github.io/",
-  },
-  {
-    name: "Task Management & Collaboration Tool",
-    desc: "Collaborative task management application with real-time updates, team workspaces, and productivity analytics. Built with React, Node.js, Socket.io for real-time features, and MongoDB.",
-    github: "https://github.com/christiangubana",
+    date: "2019 – 2020",
+    desc: "Shipped client features for small businesses and startups using Web APIs, C#/.NET and SQL Server.",
   },
 ];
 
 export const feedbacks: FeedbackType[] = [
   {
+    name: "Andre Vermeulen",
+    role: "CTO, projectcodex.co",
+    feedback:
+      "Christian is a highly motivated individual with a genuine passion for computer programming. His dedicated work ethic reflects a commendable drive to excel in the field.",
+  },
+  {
+    name: "De Wet Blomerus",
+    role: "Software Engineering Lead, SalesLoft",
+    feedback:
+      "I had the privilege of introducing him to computer programming in 2015, and since then his enthusiasm for honing his craft has been evident. His passion is a testament to his talent and commitment to growth.",
+  },
+  {
     name: "Steve Barnett",
     role: "Frontend consultant",
     feedback:
-      "Christian invests a significant amount of his time engaging actively in the tech community. His commitment extends to mentoring new students with a shared passion for learning, he collaborated seamlessly with fellow students who participate in Railsbridge, showcasing his dedication to collective growth and knowledge-sharing within the community.",
-  },
-  {
-    name: "Andre Vermeulen",
-    role: "CTO at projectcodex.co",
-    feedback:
-      "Christian is a highly motivated individual with a genuine passion for computer programming. Demonstrating a strong commitment to self-improvement, His dedicated work ethic reflects a commendable drive to excel in the field.",
-  },
-  {
-    name: "De Wet Blomerus ",
-    role: "Software engineer Lead at SalesLoft",
-    feedback:
-      "I had the privilege of introducing him to computer programming in 2015, and since then, his enthusiasm and excitement for honing his coding skills have been evident. Christian's passion for the craft is a testament to his innate talent and commitment to personal and professional growth.",
+      "Christian invests a significant amount of his time in the tech community, mentoring new students and collaborating with fellow learners, which shows his dedication to collective growth and knowledge-sharing.",
   },
 ];
 
-// See object prototype on /types/section.ts page
+export const contactCopy = {
+  title: "Got something that needs building?",
+  desc: "Send a few lines covering what you're building, where it's stuck and when you need it. I reply within one working day.",
+};
+
 export const seoData: SEODataType = {
-  title: "Christian Ngubana | Full-Stack Software Engineer | React & Node.js Developer",
+  title: "Christian Ngubana: Full-stack product engineer for founders, agencies and businesses",
   description:
-    "Experienced Full-Stack Software Engineer specializing in React, Node.js, TypeScript, and modern web technologies. Available for remote opportunities worldwide. Proven track record in building scalable web applications, optimizing performance, and delivering exceptional user experiences.",
+    "Full-stack engineer (TypeScript, NestJS, Next.js, PostgreSQL) who builds and ships production software: SaaS platforms, marketplaces, payment integrations and internal tools. Available for contract and project work.",
   author: "Christian Ngubana",
   image: "https://avatars.githubusercontent.com/u/101836990?v=4",
   url: "https://christiangubana.github.io/",
   keywords: [
     "Christian Ngubana",
-    "Full-Stack Developer",
-    "Software Engineer",
-    "React Developer",
-    "Node.js Developer",
-    "TypeScript Developer",
-    "Next.js Developer",
-    "Frontend Engineer",
-    "Backend Engineer",
-    "Remote Software Engineer",
-    "International Developer",
-    "Web Developer Portfolio",
-    "JavaScript Expert",
-    "Full-Stack Engineer",
-    "South African Developer",
-    "@christiangubana",
+    "freelance full-stack developer",
+    "contract software engineer",
+    "NestJS developer",
+    "Next.js developer",
+    "PostgreSQL",
+    "Prisma",
+    "multi-tenant SaaS",
+    "PayFast integration",
+    "Stripe integration",
+    "South Africa software developer",
+    "remote software engineer",
   ],
 };

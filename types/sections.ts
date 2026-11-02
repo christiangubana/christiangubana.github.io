@@ -1,90 +1,85 @@
 export type SEODataType = {
   title: string;
-  author?: string;
-  description?: string;
-  image?: string;
-  url?: string;
+  description: string;
+  author: string;
+  image: string;
+  url: string;
   keywords: string[];
 };
 
-// https://www.typescriptlang.org/docs/handbook/2/objects.html#index-signatures
+export type ProfileType = {
+  name: string;
+  role: string;
+  location: string;
+  email: string;
+  avatar: string;
+  resumeLink: string;
+  availability: string;
+};
 
 export type SocialLinksType = {
-  [link: string]: string;
+  email: string;
+  linkedin: string;
+  github: string;
+  twitter?: string;
 };
 
-// * HERO SECTION
-
-export type GreetingsType = {
+export type WorkType = {
   name: string;
-  title: string;
-  description?: string;
-  resumeLink?: string;
-};
-
-// * SKILLS SECTION
-
-type SoftwareSkillType = {
-  skillName: string;
-  iconifyTag: string;
-};
-
-type SkillType = {
-  title: string;
-  lottieAnimationFile: string;
-  skills: React.ReactNode[] | string[];
-  softwareSkills: SoftwareSkillType[];
-};
-
-export type SkillsSectionType = {
-  title: string;
-  subTitle: string;
-  data: SkillType[];
-};
-
-// * PROFICIENCY SECTION
-
-export type SkillBarsType = {
-  Stack: string;
-  progressPercentage: string;
-};
-
-// * EDUCATION SECTION
-
-export type EducationType = {
-  schoolName: string;
-  subHeader: string;
-  duration: string;
+  summary: string;
   desc: string;
-  grade?: string;
-  descBullets?: string[];
+  role: string;
+  period?: string;
+  stack?: string[];
+  highlights?: string[];
+  link?: string;
+  linkLabel?: string;
+  featured?: boolean;
 };
 
-// * EXPERIENCE SECTION
+export type EarlierWorkType = {
+  name: string;
+  desc: string;
+  link: string;
+};
+
+export type ServiceType = {
+  title: string;
+  forWho: string;
+  desc: string;
+  examples: string[];
+};
+
+export type ProcessStepType = {
+  title: string;
+  desc: string;
+};
+
+export type EngagementType = {
+  title: string;
+  desc: string;
+};
 
 export type ExperienceType = {
   role: string;
   company: string;
-  companyLogo: string;
   date: string;
   desc: string;
-  descBullets?: string[];
 };
-
-// * PROJECT SECTION
-
-export type ProjectType = {
-  name: string;
-  desc: string;
-  github?: string;
-  link?: string;
-};
-
-// * FEEDBACK SECTION
 
 export type FeedbackType = {
   name: string;
   role: string;
   feedback: string;
-  image?: string;
 };
+
+export type PostMeta = {
+  slug: string;
+  title: string;
+  date: string;
+  description: string;
+  tags: string[];
+  readingMinutes: number;
+};
+
+export type Post = PostMeta & { html: string };
