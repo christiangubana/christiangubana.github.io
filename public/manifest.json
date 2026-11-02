@@ -1,21 +1,13 @@
 {
-  "short_name": "Portfolio",
-  "name": "Christian's Portfolio",
-  "description": "A passionate Full Stack Web Developer and Mobile App Developer.",
+  "short_name": "Christian Ngubana",
+  "name": "Christian Ngubana: Full-stack product engineer",
+  "description": "I help founders, agencies and growing businesses ship production software.",
   "icons": [
-    {
-      "src": "./favicon.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "./favicon.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
+    { "src": "/icon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "/icon-512.png", "type": "image/png", "sizes": "512x512" }
   ],
-  "start_url": "./index.html",
+  "start_url": "/",
   "display": "standalone",
-  "theme_color": "#11cdef",
-  "background_color": "#11cdef"
+  "theme_color": "#0f766e",
+  "background_color": "#fbfaf7"
 }

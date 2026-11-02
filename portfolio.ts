@@ -82,7 +82,7 @@ export const work: WorkType[] = [
     name: "Mrukumeta Trading",
     summary: "Online store with PayFast checkout",
     desc: "An online store for a Cape Town motorbike parts, tyres and repairs business, with a PayFast checkout so customers can order and pay online.",
-    role: "Built the store and payments",
+    role: "Built the store and payments Integration",
     stack: ["Next.js", "PayFast", "Cloudinary", "Vercel"],
     link: "https://www.mrukumetatrading.com/",
   },
@@ -172,13 +172,13 @@ export const experience: ExperienceType[] = [
   {
     role: "Independent product engineer",
     company: "Client work",
-    date: "2025 – Present",
+    date: "2026 – Present",
     desc: "Building and leading delivery of production platforms for clients, including FloorTick, ShareSpaceNow, CampusLush, FatAllan and Mrukumeta Trading.",
   },
   {
     role: "Full-Stack Software Developer",
     company: "Meyk",
-    date: "Jan 2024 – Mar 2026",
+    date: "Jan 2025 – Mar 2026",
     desc: "Built APIs and services with NestJS and TypeScript, product UI with Next.js and React, and PostgreSQL schemas for complex data relationships.",
   },
   {
