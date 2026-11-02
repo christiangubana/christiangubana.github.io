@@ -1,6 +1,6 @@
 ---
 title: Verifying PayFast payments in Next.js without getting burned
-date: 2026-11-02
+date: 2026-10-05
 description: The return URL is not proof of payment. Here's how to handle PayFast's ITN properly, with signature checks, server validation, amount matching and idempotency.
 tags: Payments, PayFast, Next.js, Node.js
 ---

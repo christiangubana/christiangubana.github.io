@@ -4,17 +4,17 @@ import { getAllPosts } from "../../lib/posts";
 import { formatDate } from "../../lib/format";
 import { PostMeta } from "../../types/sections";
 
-export default function Blog({ posts }: { posts: PostMeta[] }) {
+export default function Articles({ posts }: { posts: PostMeta[] }) {
   return (
     <>
       <SEO
-        title="Blog"
+        title="Articles"
         description="Practical notes on building and shipping production software: multi-tenant SaaS, payments, NestJS, Next.js and PostgreSQL."
-        path="/blog/"
+        path="/articles/"
       />
       <section className="section container narrow">
         <header className="section-head">
-          <p className="kicker">Blog</p>
+          <p className="kicker">Articles</p>
           <h1 className="h-page">Notes from production</h1>
           <p className="lead">
             Practical write-ups from the systems I build: multi-tenant SaaS, payments, and the parts of shipping
@@ -24,7 +24,7 @@ export default function Blog({ posts }: { posts: PostMeta[] }) {
         <ul className="post-list">
           {posts.map(p => (
             <li key={p.slug}>
-              <Link href={`/blog/${p.slug}`}>
+              <Link href={`/articles/${p.slug}`}>
                 <p className="meta">
                   {formatDate(p.date)} · {p.readingMinutes} min read
                 </p>

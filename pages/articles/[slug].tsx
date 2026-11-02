@@ -6,13 +6,13 @@ import { getAllPosts, getPost } from "../../lib/posts";
 import { formatDate } from "../../lib/format";
 import { Post } from "../../types/sections";
 
-export default function BlogPost({ post }: { post: Post }) {
+export default function Article({ post }: { post: Post }) {
   return (
     <>
-      <SEO title={post.title} description={post.description} path={`/blog/${post.slug}/`} type="article" />
+      <SEO title={post.title} description={post.description} path={`/articles/${post.slug}/`} type="article" />
       <article className="section container narrow">
-        <Link href="/blog" className="back-link">
-          ← All posts
+        <Link href="/articles" className="back-link">
+          ← All articles
         </Link>
         <header className="post-head">
           <p className="meta">

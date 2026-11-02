@@ -243,7 +243,6 @@ p {
   border: 1px solid var(--line);
   border-radius: 999px;
   background: var(--surface);
-  margin-bottom: 28px;
 }
 .status-dot {
   width: 8px;
@@ -259,13 +258,30 @@ p {
   color: var(--muted);
 }
 
+.profile {
+  margin: 8px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+.profile figcaption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.location {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
 .avatar {
   width: 168px;
   height: 168px;
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid var(--line);
-  margin-top: 56px;
 }
 
 /* Proof strip */
@@ -719,11 +735,19 @@ p {
     padding-top: 56px;
     gap: 0;
   }
-  .avatar {
+  .profile {
     order: -1;
-    width: 88px;
-    height: 88px;
-    margin: 0 0 24px;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    margin: 0 0 28px;
+  }
+  .profile figcaption {
+    align-items: flex-start;
+  }
+  .avatar {
+    width: 72px;
+    height: 72px;
   }
   .card-featured,
   .grid-2,
@@ -745,7 +769,8 @@ p {
     font-size: 16px;
   }
   .container {
-    padding: 0 16px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .nav-secondary {
     display: none;
@@ -784,30 +809,8 @@ p {
 }
 
 /* Contact options */
-.contact-options {
-  margin-top: 28px;
-}
-.email-row {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
-  font-family: var(--mono);
-  font-size: 1.05rem;
-  padding: 10px 10px 10px 16px;
-  border: 1px solid color-mix(in srgb, var(--cta-ink) 25%, transparent);
-  border-radius: 999px;
-  max-width: 100%;
-}
-.email-row span {
-  overflow-wrap: anywhere;
-}
-.email-row button {
-  cursor: pointer;
-  font-family: var(--font);
-}
-.contact-options .actions {
-  margin: 20px 0 0;
+.contact-actions {
+  margin-bottom: 0;
 }
 .cta .cta-alt {
   margin: 24px 0 0;
@@ -831,21 +834,5 @@ p {
 @media (max-width: 640px) {
   .cta {
     padding: 28px 20px;
-  }
-  .email-row {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    font-size: 0.9rem;
-    padding: 14px;
-    border-radius: 14px;
-  }
-  .email-row svg {
-    display: none;
-  }
-  .email-row span {
-    overflow-wrap: normal;
   }
 }

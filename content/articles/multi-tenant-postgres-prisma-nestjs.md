@@ -1,6 +1,6 @@
 ---
 title: Multi-tenant SaaS on PostgreSQL, Prisma and NestJS: how I keep tenants apart
-date: 2026-11-02
+date: 2026-10-19
 description: Database per tenant, schema per tenant, or a shared schema with row-level security? The trade-offs I weigh when building multi-tenant platforms, plus a working Prisma and RLS setup.
 tags: SaaS, PostgreSQL, Prisma, NestJS, Architecture
 ---

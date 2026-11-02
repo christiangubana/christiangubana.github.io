@@ -19,14 +19,14 @@ export const profile: ProfileType = {
   email: "christiangubana@gmail.com",
   avatar: "https://avatars.githubusercontent.com/u/101836990?v=4",
   resumeLink: "/img/icons/common/pdf/christiangubana-resume.pdf",
-  availability: "Taking on new projects",
+  availability: "Open to remote roles & projects",
 };
 
 export const socialLinks: SocialLinksType = {
   email: "mailto:christiangubana@gmail.com?subject=Project%20enquiry",
   linkedin: "https://www.linkedin.com/in/christiangubana/",
   github: "https://github.com/christiangubana",
-  twitter: "https://twitter.com/christiangubana",
+  twitter: "https://x.com/Christiangubana",
 };
 
 export const hero = {

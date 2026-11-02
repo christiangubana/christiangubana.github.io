@@ -1,4 +1,4 @@
-// Reads markdown posts from content/blog at build time.
+// Reads markdown posts from content/articles at build time.
 // Each file starts with a frontmatter block:
 // ---
 // title: ...
@@ -12,7 +12,7 @@ import path from "path";
 import { marked } from "marked";
 import { Post, PostMeta } from "../types/sections";
 
-const POSTS_DIR = path.join(process.cwd(), "content", "blog");
+const POSTS_DIR = path.join(process.cwd(), "content", "articles");
 
 function parse(file: string) {
   const raw = fs.readFileSync(path.join(POSTS_DIR, file), "utf8");

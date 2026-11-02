@@ -31,10 +31,6 @@ export default function Home({ posts }: { posts: PostMeta[] }) {
       {/* Hero */}
       <section className="hero container">
         <div className="hero-text">
-          <p className="status">
-            <span className="status-dot" aria-hidden="true" />
-            {profile.availability} · {profile.location}
-          </p>
           <h1>{hero.title}</h1>
           <p className="lead">{hero.lead}</p>
           <div className="actions">
@@ -47,7 +43,16 @@ export default function Home({ posts }: { posts: PostMeta[] }) {
           </div>
           <p className="eyebrow">{hero.eyebrow}</p>
         </div>
-        <img className="avatar" src={profile.avatar} alt={profile.name} width={168} height={168} />
+        <figure className="profile">
+          <img className="avatar" src={profile.avatar} alt={profile.name} width={168} height={168} />
+          <figcaption>
+            <span className="status">
+              <span className="status-dot" aria-hidden="true" />
+              {profile.availability}
+            </span>
+            <span className="location">{profile.location}</span>
+          </figcaption>
+        </figure>
       </section>
 
       {/* Proof strip */}
@@ -190,16 +195,16 @@ export default function Home({ posts }: { posts: PostMeta[] }) {
           <div className="container">
             <header className="section-head section-head-row">
               <div>
-                <p className="kicker">Writing</p>
+                <p className="kicker">Articles</p>
                 <h2>Notes from production</h2>
               </div>
-              <Link href="/blog" className="text-link">
-                All posts <ArrowIcon />
+              <Link href="/articles" className="text-link">
+                All articles <ArrowIcon />
               </Link>
             </header>
             <div className="grid grid-3">
               {posts.slice(0, 3).map(p => (
-                <Link href={`/blog/${p.slug}`} className="card card-link" key={p.slug}>
+                <Link href={`/articles/${p.slug}`} className="card card-link" key={p.slug}>
                   <p className="meta">
                     {formatDate(p.date)} · {p.readingMinutes} min read
                   </p>

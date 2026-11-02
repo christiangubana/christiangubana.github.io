@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ReactNode } from "react";
 import { profile, socialLinks } from "../portfolio";
-import { GitHubIcon, LinkedInIcon, MailIcon } from "./Icons";
+import { GitHubIcon, LinkedInIcon, XIcon } from "./Icons";
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (
@@ -24,7 +24,7 @@ export default function Layout({ children }: { children: ReactNode }) {
             <Link href="/#process" className="nav-secondary">
               Process
             </Link>
-            <Link href="/blog">Blog</Link>
+            <Link href="/articles">Articles</Link>
             <Link href="/#contact" className="btn btn-small">
               Contact
             </Link>
@@ -40,15 +40,17 @@ export default function Layout({ children }: { children: ReactNode }) {
             © {new Date().getFullYear()} {profile.name} · {profile.location}
           </p>
           <div className="footer-links">
-            <Link href="/#contact">
-              <MailIcon /> Email
-            </Link>
             <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
               <LinkedInIcon /> LinkedIn
             </a>
             <a href={socialLinks.github} target="_blank" rel="noopener noreferrer">
               <GitHubIcon /> GitHub
             </a>
+            {socialLinks.twitter && (
+              <a href={socialLinks.twitter} target="_blank" rel="noopener noreferrer">
+                <XIcon /> X
+              </a>
+            )}
           </div>
         </div>
       </footer>
