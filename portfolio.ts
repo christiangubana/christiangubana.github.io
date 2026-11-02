@@ -30,7 +30,7 @@ export const socialLinks: SocialLinksType = {
 };
 
 export const hero = {
-  eyebrow: "TypeScript · NestJS · Next.js · PostgreSQL",
+  eyebrow: "TypeScript · React · Next.js · Node.js · NestJS · PostgreSQL · Prisma · Supabase · Stripe · AWS · Docker",
   title: "I help founders, agencies and growing businesses ship production software.",
   lead: "I'm a full-stack engineer with 5+ years of experience. I can join your team as an extra engineer, or take a feature or a whole product from first commit to production. Right now I'm building FloorTick, a multi-tenant compliance platform. In 2025–2026 I led development of three platforms used by thousands of people.",
 };
@@ -42,7 +42,7 @@ export const work: WorkType[] = [
     desc: "Replaces the paper records used on factory floors with configurable digital checklists, aligned with the FSSC 22000 v7 food-safety standard. Each customer organisation gets its own isolated workspace.",
     role: "Lead engineer · client product",
     period: "In active development",
-    stack: ["NestJS", "Next.js", "PostgreSQL", "Prisma"],
+    stack: ["TypeScript", "NestJS", "Next.js", "PostgreSQL", "Prisma", "Vercel"],
     highlights: [
       "Multi-tenant data model with per-organisation isolation",
       "Configurable checklist engine: customers define their own forms and workflows",
@@ -57,7 +57,7 @@ export const work: WorkType[] = [
     desc: "Property owners list unused warehouse capacity, and businesses book it by the pallet or bay. Hosts are identity-verified and payments run through Stripe.",
     role: "Led development",
     period: "2025–2026",
-    stack: ["Stripe"],
+    stack: ["React", "Vite", "Supabase", "Stripe", "Cloudflare"],
     link: "https://sharespacenow.com/",
   },
   {
@@ -66,6 +66,7 @@ export const work: WorkType[] = [
     desc: "A platform where students discover campus events and opportunities, sign up and take part.",
     role: "Led development",
     period: "2025–2026",
+    stack: ["Next.js", "React", "AWS CloudFront"],
     link: "https://campuslush.com/",
   },
   {
@@ -74,6 +75,7 @@ export const work: WorkType[] = [
     desc: "Helps diners discover and compare the best restaurants in town.",
     role: "Led development",
     period: "2025–2026",
+    stack: ["React", "AWS S3", "CloudFront"],
     link: "https://www.fatallan.com/",
   },
   {
@@ -81,7 +83,7 @@ export const work: WorkType[] = [
     summary: "Online store with PayFast checkout",
     desc: "An online store for a Cape Town motorbike parts, tyres and repairs business, with a PayFast checkout so customers can order and pay online.",
     role: "Built the store and payments",
-    stack: ["PayFast"],
+    stack: ["Next.js", "PayFast", "Cloudinary", "Vercel"],
     link: "https://www.mrukumetatrading.com/",
   },
   {
@@ -176,7 +178,7 @@ export const experience: ExperienceType[] = [
   {
     role: "Full-Stack Software Developer",
     company: "Meyk",
-    date: "Jan 2024 – Present",
+    date: "Jan 2024 – Mar 2026",
     desc: "Built APIs and services with NestJS and TypeScript, product UI with Next.js and React, and PostgreSQL schemas for complex data relationships.",
   },
   {
