@@ -4,7 +4,6 @@ import SEO from "../../components/SEO";
 import { MailIcon } from "../../components/Icons";
 import { getAllPosts, getPost } from "../../lib/posts";
 import { formatDate } from "../../lib/format";
-import { socialLinks } from "../../portfolio";
 import { Post } from "../../types/sections";
 
 export default function BlogPost({ post }: { post: Post }) {
@@ -34,9 +33,9 @@ export default function BlogPost({ post }: { post: Post }) {
             <strong>Building something similar?</strong> I take on contract and project work for founders, agencies
             and businesses.
           </p>
-          <a href={socialLinks.email} className="btn">
+          <Link href="/#contact" className="btn">
             <MailIcon /> Get in touch
-          </a>
+          </Link>
         </aside>
       </article>
     </>

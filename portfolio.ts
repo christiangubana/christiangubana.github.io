@@ -163,6 +163,7 @@ export const engagements: EngagementType[] = [
   { title: "Fixed-scope project", desc: "A clear deliverable at an agreed price. Best for MVPs, integrations and internal tools." },
   { title: "Monthly retainer", desc: "Part-time or full-time capacity on your team, renewed month to month." },
   { title: "Embedded contract", desc: "I join your team for a set period at a day rate. Best for agencies and teams that need cover." },
+  { title: "Full-time remote role", desc: "For the right product and team, I'm open to joining full-time, remotely." },
 ];
 
 export const experience: ExperienceType[] = [

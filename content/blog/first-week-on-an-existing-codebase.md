@@ -53,4 +53,4 @@ Even if we only work together for a month, you keep that note.
 
 ---
 
-*If you have a product that needs another engineer, or an agency project that needs more capacity, [get in touch](mailto:christiangubana@gmail.com?subject=Project%20enquiry).*
+*If you have a product that needs another engineer, or an agency project that needs more capacity, [get in touch](/#contact).*

@@ -25,9 +25,9 @@ export default function Layout({ children }: { children: ReactNode }) {
               Process
             </Link>
             <Link href="/blog">Blog</Link>
-            <a href={socialLinks.email} className="btn btn-small">
+            <Link href="/#contact" className="btn btn-small">
               Contact
-            </a>
+            </Link>
           </div>
         </nav>
       </header>
@@ -40,9 +40,9 @@ export default function Layout({ children }: { children: ReactNode }) {
             © {new Date().getFullYear()} {profile.name} · {profile.location}
           </p>
           <div className="footer-links">
-            <a href={socialLinks.email} aria-label="Email">
+            <Link href="/#contact">
               <MailIcon /> Email
-            </a>
+            </Link>
             <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
               <LinkedInIcon /> LinkedIn
             </a>

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SEO from "../components/SEO";
+import ContactOptions from "../components/ContactOptions";
 import { ArrowIcon, GitHubIcon, LinkedInIcon, MailIcon } from "../components/Icons";
 import { getAllPosts } from "../lib/posts";
 import { formatDate } from "../lib/format";
@@ -37,7 +38,7 @@ export default function Home({ posts }: { posts: PostMeta[] }) {
           <h1>{hero.title}</h1>
           <p className="lead">{hero.lead}</p>
           <div className="actions">
-            <a href={socialLinks.email} className="btn">
+            <a href="#contact" className="btn">
               <MailIcon /> Tell me what you&apos;re building
             </a>
             <a href="#work" className="btn btn-ghost">
@@ -254,17 +255,17 @@ export default function Home({ posts }: { posts: PostMeta[] }) {
           <div className="cta">
             <h2>{contactCopy.title}</h2>
             <p>{contactCopy.desc}</p>
-            <div className="actions">
-              <a href={socialLinks.email} className="btn btn-invert">
-                <MailIcon /> {profile.email}
-              </a>
-              <a href={socialLinks.linkedin} className="btn btn-ghost-invert" {...external}>
-                <LinkedInIcon /> LinkedIn
-              </a>
-              <a href={socialLinks.github} className="btn btn-ghost-invert" {...external}>
+            <ContactOptions />
+            <p className="cta-alt">
+              Prefer LinkedIn?{" "}
+              <a href={socialLinks.linkedin} {...external}>
+                <LinkedInIcon /> Message me there
+              </a>{" "}
+              ·{" "}
+              <a href={socialLinks.github} {...external}>
                 <GitHubIcon /> GitHub
               </a>
-            </div>
+            </p>
           </div>
         </div>
       </section>
