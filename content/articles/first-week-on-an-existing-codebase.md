@@ -15,7 +15,7 @@ I clone the repo and follow the README exactly as written. Every missing environ
 
 That list is the first useful thing I give you. The next person you hire will go through the same pain, and fixing the setup docs costs an hour.
 
-## Day 1–2: read the data model before the code
+## Day 1-2: read the data model before the code
 
 The database schema tells you what the business actually is. Before I open a single component, I read the Prisma schema or migrations and sketch the main entities and how they relate. It's the fastest way to understand a product and to spot problems such as missing constraints, ambiguous status fields or tenant data without a tenant key.
 
@@ -23,7 +23,7 @@ The database schema tells you what the business actually is. Before I open a sin
 
 I pick the most important user action, such as checkout, sign-up or submitting a form, and follow it from the button to the database and back. Along the way I learn the folder conventions, how errors are handled, where validation lives and how auth works.
 
-## Day 2–3: find out how code reaches production
+## Day 2-3: find out how code reaches production
 
 - How does code get to production?
 - Is there a staging environment, and does it look like production?
@@ -32,7 +32,7 @@ I pick the most important user action, such as checkout, sign-up or submitting a
 
 If the honest answer is "someone runs a script from their laptop", it's worth knowing before anything ships.
 
-## Day 3–4: find the scary parts
+## Day 3-4: find the scary parts
 
 Every codebase has a few files everyone avoids touching. I look for business-critical paths with no tests, such as payments, permissions and data exports, and note them. I don't rewrite them yet. I just make sure we both know where the risk is.
 

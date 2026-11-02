@@ -32,7 +32,7 @@ export const socialLinks: SocialLinksType = {
 export const hero = {
   eyebrow: "TypeScript · React · Next.js · Node.js · NestJS · PostgreSQL · Prisma · Supabase · Stripe · AWS · Docker",
   title: "I help founders, agencies and growing businesses ship production software.",
-  lead: "I'm a full-stack engineer with 5+ years of experience. I can join your team as an extra engineer, or take a feature or a whole product from first commit to production. Right now I'm building FloorTick, a multi-tenant compliance platform. In 2025–2026 I led development of three platforms used by thousands of people.",
+  lead: "I'm a full-stack engineer with 5+ years of experience. I can join your team as an extra engineer, or take a feature or a whole product from first commit to production. Right now I'm building FloorTick, a multi-tenant compliance platform. In 2025-2026 I led development of three platforms used by thousands of people.",
 };
 
 export const work: WorkType[] = [
@@ -56,7 +56,7 @@ export const work: WorkType[] = [
     summary: "Marketplace for flexible warehouse and storage space",
     desc: "Property owners list unused warehouse capacity, and businesses book it by the pallet or bay. Hosts are identity-verified and payments run through Stripe.",
     role: "Led development",
-    period: "2025–2026",
+    period: "2025-2026",
     stack: ["React", "Vite", "Supabase", "Stripe", "Cloudflare"],
     link: "https://sharespacenow.com/",
   },
@@ -65,7 +65,7 @@ export const work: WorkType[] = [
     summary: "Events and opportunities platform for students",
     desc: "A platform where students discover campus events and opportunities, sign up and take part.",
     role: "Led development",
-    period: "2025–2026",
+    period: "2025-2026",
     stack: ["Next.js", "React", "AWS CloudFront"],
     link: "https://campuslush.com/",
   },
@@ -74,7 +74,7 @@ export const work: WorkType[] = [
     summary: "Restaurant discovery platform",
     desc: "Helps diners discover and compare the best restaurants in town.",
     role: "Led development",
-    period: "2025–2026",
+    period: "2025-2026",
     stack: ["React", "AWS S3", "CloudFront"],
     link: "https://www.fatallan.com/",
   },
@@ -172,31 +172,31 @@ export const experience: ExperienceType[] = [
   {
     role: "Independent product engineer",
     company: "Client work",
-    date: "2026 – Present",
+    date: "2026 - Present",
     desc: "Building and leading delivery of production platforms for clients, including FloorTick, ShareSpaceNow, CampusLush, FatAllan and Mrukumeta Trading.",
   },
   {
     role: "Full-Stack Software Developer",
     company: "Meyk",
-    date: "Jan 2025 – Mar 2026",
+    date: "Jan 2025 - Mar 2026",
     desc: "Built APIs and services with NestJS and TypeScript, product UI with Next.js and React, and PostgreSQL schemas for complex data relationships.",
   },
   {
     role: "Frontend Developer",
     company: "Injozi",
-    date: "Jan 2023 – Dec 2023",
+    date: "Jan 2023 - Dec 2023",
     desc: "Built a reusable React component library for a fintech platform, improved page-load performance and Core Web Vitals, and mentored junior developers.",
   },
   {
     role: "Software Developer",
     company: "Platform45",
-    date: "Nov 2021 – Oct 2022",
+    date: "Nov 2021 - Oct 2022",
     desc: "Delivered 10+ client projects for international clients using React, Next.js and Node.js, including payment, analytics and authentication integrations.",
   },
   {
     role: "Junior Developer",
     company: "Code Collective",
-    date: "2019 – 2020",
+    date: "2019 - 2020",
     desc: "Shipped client features for small businesses and startups using Web APIs, C#/.NET and SQL Server.",
   },
 ];
